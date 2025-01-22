@@ -5,7 +5,7 @@ import de.jannik.goette.shared.FileReader;
 public class Main {
 
     public static void main(String[] args) {
-        final String input = new FileReader().readFile();
+        final String input = new FileReader().readFile("one");
 
         int floor = 0;
         boolean found = false;
@@ -19,10 +19,10 @@ public class Main {
 
             if (floor < 0 && !found) {
                 found = true;
-                System.out.println(i + 1);
+                System.out.println("First Flow < 0 = " + (i + 1));
             }
         }
-        System.out.println(floor);
+        System.out.println("Target Floor: " + floor);
     }
 }
 
