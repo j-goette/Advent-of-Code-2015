@@ -19,7 +19,7 @@ public class Main {
 
             if (floor < 0 && !found) {
                 found = true;
-                System.out.println("First Flow < 0 = " + (i + 1));
+                System.out.println("First Floor < 0 = " + (i + 1));
             }
         }
         System.out.println("Target Floor: " + floor);
